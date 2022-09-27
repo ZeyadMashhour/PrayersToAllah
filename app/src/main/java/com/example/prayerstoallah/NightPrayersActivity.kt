@@ -16,15 +16,30 @@ class NightPrayersActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_night_prayers)
 
+        initializeVar()
+        settingClickListener()
+
+    }
+
+    private fun initializeVar(){
+
+        /* first block */
         llKorsi = findViewById(R.id.llAyetElKorsi)
         tvKorsiCounter = findViewById(R.id.tvCounter1)
         llKorsiCounter = findViewById(R.id.llCounter1)
+    }
+
+    private fun settingClickListener(){
+
+        /* first block */
         llKorsi.setOnClickListener {
             var counter: Int = tvKorsiCounter.text.toString().toInt()
             counter--
             tvKorsiCounter.text = counter.toString()
             if (counter == 0) {
                 llKorsiCounter.visibility=View.GONE
+                /* disable onClickListener */
+                llKorsi.isEnabled = !(llKorsi.isEnabled)
             }
 
         }
