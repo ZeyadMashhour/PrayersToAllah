@@ -22,51 +22,39 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_marginTop="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:id="@+id/ivButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/incrementer"
-                    android:background="@color/red"/>
-
-                <TextView
-                    style="@style/TextView_Style"
-                    android:layout_margin="0dp"
-                    android:text="@string/AyetElKorsi" />
-            </LinearLayout>
-
-            <LinearLayout
                 android:id="@+id/llAyetElKorsi"
                 android:layout_marginTop="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <LinearLayout
+                    android:id="@+id/llCounter1"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
+                    android:background="@color/red"
                     android:orientation="vertical"
-                    android:background="@color/red">
+                    android:visibility="visible">
 
                     <TextView
+                        android:id="@+id/tvCounter1"
+                        style="@style/TextView_Style"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:text="0"
+                        android:background="@color/red"
                         android:gravity="center"
-                        style="@style/TextView_Style"
                         android:padding="0dp"
-                        android:background="@color/red"/>
+                        android:text="1"
+                        android:textColor="#FFE0B2" />
+
                     <ImageView
                         android:id="@+id/ivImageView"
                         android:layout_width="35dp"
-                        android:layout_gravity="center"
                         android:layout_height="40dp"
-                        android:src="@drawable/incrementer"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
                         android:background="@color/brown"
-                        android:layout_margin="5dp"/>
+                        android:src="@drawable/incrementer" />
                 </LinearLayout>
 
                 <TextView
