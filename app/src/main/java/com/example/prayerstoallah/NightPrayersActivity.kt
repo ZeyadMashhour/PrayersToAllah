@@ -27,6 +27,8 @@ class NightPrayersActivity : AppCompatActivity() {
         llKorsi = findViewById(R.id.llAyetElKorsi)
         tvKorsiCounter = findViewById(R.id.tvCounter1)
         llKorsiCounter = findViewById(R.id.llCounter1)
+        /* second block */
+
     }
 
     private fun settingClickListener(){
